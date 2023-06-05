@@ -24,6 +24,7 @@
     <ProjectGuid>{f47bd5d3-8ac6-4e86-bac0-007b6790102d}</ProjectGuid>
     <RootNamespace>Weather</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>WeatherService</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,6 +129,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Weather.cpp" />
+    <ClCompile Include="WeatherService.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Weather.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
