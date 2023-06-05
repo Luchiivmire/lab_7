@@ -8,7 +8,7 @@ Weather JsonService::getWeather(std::string s)
         throw exception("error");
 
     json j;
-    j = json::parse(fin);
+    fin >> j;
 
     std::string city = j["name"].get<string>();
     double lon = j["coord"]["lon"].get<double>(); // 49.6601
